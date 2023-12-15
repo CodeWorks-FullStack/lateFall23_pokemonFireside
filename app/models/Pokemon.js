@@ -4,7 +4,7 @@ export class Pokemon{
   constructor(data){
     this.id = data.id
     this.name = data.name
-    this.nickName = data.id
+    this.nickName = data.id // this id is that pokemon's number
     this.weight = data.weight
     this.height = data.height
     this.types = data.types[0].type ? data.types.map(t => t.type.name) : data.types
